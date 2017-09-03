@@ -1,0 +1,518 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #717171;
+    font-size: 1rem;
+}
+
+h1, h2, h3, strong {
+    color: #3e3e3e;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 600px) {
+    #containerNav {
+        display: none;
+    }
+    
+    #logoContain {
+        display: none;
+    }
+    
+    #mobileHeader {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+    
+    #mobileNav a {
+        margin: 0 25px 0 25px;
+    }
+    
+    #headerImage {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #E3E3E3;
+        padding: 0;
+    }
+    
+    #mainImage {
+        display: flex;
+        width: 100%;
+    }
+
+    #mainImage img {
+        max-width: 600px;
+        min-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+    
+    #mainImageText {
+        display: flex;
+        justify-content: center;
+        padding: 32px 16px 32px 16px;
+    }
+
+    #mainImageText h1 {
+        color: #3e3e3e;
+        font-size: 2.5rem;
+        margin: 0 auto;
+        padding-bottom: 16px;
+    }
+
+    #headerButton {
+        background-color: #717171;
+        color: #fff;
+        font-size: 1rem;
+        padding: 12px 0 12px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #headerButton:hover {
+        background-color: #000;
+    }
+    
+    #content1 {
+        display: none;
+    }
+    
+    #content2Contain {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #content2-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
+        padding: 16px;
+        background-color: none;
+        border: 1px solid #fff;
+    }
+    
+    #contentImgCont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #content2Contain {
+        display: none;
+    }
+    
+    video {
+        max-width: 625px;
+        min-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+    
+    #content1-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    #content1-1 h2 {
+        display: none;
+    }
+    
+    #content1-1 span {
+        display: none;
+    }
+    
+    #mainContent {
+        display: flex;
+        background-color: #fff;
+        padding: 32px 0 32px 0;
+    }
+    
+    #thesisHeader {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    #thesisHeader h1 {
+        margin: 0;
+    }
+    
+    #containerNav {
+        display: none;
+    }
+    
+    #container-rows {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8px 32px 8px;
+        background-color: #fff;
+        margin-top: -32px;
+        border: 1px solid #f1f1f1;
+    }
+    
+    #row {
+        display: none;
+    }
+    
+    #rowMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    
+    #featureMobile {
+        margin: 8px;
+        text-align: left;
+        background-color: #f1f1f1;
+        max-width: 350px;
+        border: 1px solid #e3e3e3;
+        padding: 16px;
+    }
+    
+    #featureMobile a {
+        text-decoration: none;
+        color: #3e3e3e;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    #featureMobile:hover {
+        background-color: #e3e3e3;
+    }
+    
+    #content2Contain-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+        background-color: #fff;
+        margin-top: -3px;
+    }
+    
+    #featureMobile-s2 {
+        margin: 0;
+        margin-bottom: 32px;
+        background-color: #fff;
+        width: 100%;
+        border: 0;
+        padding: 0;
+    }
+    
+    #featureMobile-s2 img {
+        max-width: 558px;
+        min-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+    
+    #featureMobile-s2 h2 {
+        margin-top: 16px;
+        font-size: 1.3rem;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    #featureMobile-s2 p {
+        font-size: 0.85rem;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    #featureMobile-s2 a {
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: cornflowerblue;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    #featureMobile-s2 a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* Desktop CSS */
+.header {
+    display: flex;
+    background-color: #fff;
+    padding: 5px 15px 5px 15px;
+}
+
+.mobileHeader {
+    display: none;
+}
+
+.logoContain {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logoContain span {
+    color: #b1b1b1;
+}
+
+.logoContain p {
+    color: #b1b1b1;
+    font-size: 0.8rem;
+}
+
+.containerNav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.containerNav a {
+    padding: 8px;
+}
+
+.header li {
+    list-style: none;
+    display: inline-flex;
+}
+
+.header li a {
+    color: #b1b1b1;
+    margin: 0;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.header li a:hover {
+    color: #717171;
+    text-decoration: underline;
+}
+
+.headerImage {
+    display: flex;
+    background-color: #E3E3E3;
+    padding: 32px 24px 32px 24px;
+}
+
+.mainImage img {
+    max-width: 1200px;
+    min-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainImageText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 50px 32px 50px;
+}
+
+.mainImageText h1 {
+    color: #3e3e3e;
+    font-size: 3rem;
+    line-height: 2.75rem;
+    margin: 0 auto;
+}
+
+.headerButton {
+    background-color: #717171;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 0 8px 0;
+    width: 150px;
+    text-align: center;
+}
+
+.headerButton:hover {
+    background-color: #000;
+}
+
+.mainContent {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 32px 24px 32px 24px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    padding-right: 32px;
+    border-right: 1px solid #b1b1b1;
+}
+
+.content1-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    padding-right: 32px;
+}
+
+.content1 img {
+    max-width: 1200px;
+    min-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.content1 span {
+    color: #717171;
+    font-size: 0.9rem;
+}
+
+.content1 h2 {
+    padding-top: 20px;
+}
+
+.content1-1 span {
+    color: #717171;
+    font-size: 0.9rem;
+}
+
+.content1-1 h2 {
+    padding-top: 20px;
+}
+
+.content2Contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+    margin-left: 2px;
+}
+
+.content2Contain-mobile {
+    display: none;
+}
+
+.content2-row:hover {
+    background-color: #e3e3e3;
+}
+
+.content2-row-1:hover {
+    background-color: #e3e3e3;
+}
+
+.content2-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    padding: 16px;
+    background-color: none;
+    border: 1px solid #b1b1b1;
+}
+
+.content2-row-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    padding: 16px;
+}
+
+.content2-row img {
+    max-width: 125px;
+}
+
+.content2-row-1 img {
+    max-width: 125px;
+}
+
+.contentImgCont {
+    padding-left: 16px;
+}
+
+.contentImgCont h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.contentImgCont p {
+    font-size: 0.8rem;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.contentImgCont a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: cornflowerblue;
+    margin: 0;
+}
+
+.contentImgCont a:hover {
+    text-decoration: underline;
+}
+
+.container-rows {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 24px 32px 24px;
+    background-color: #e3e3e3;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rowMobile {
+    display: none;
+}
+
+.feature {
+    margin: 16px;
+    background-color: #fff;
+    max-width: 350px;
+    border: 1px solid #e3e3e3;
+}
+
+.feature img {
+    max-width: 350px;
+}
+
+.feature h3 {
+    padding: 0 16px 0 16px;
+    font-size: 1.2rem;
+}
+
+.feature p {
+    padding: 0 16px 0 16px;
+    font-size: 0.8rem;
+    color: #b1b1b1;
+}
+
+.learnHeader {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.content1-1 video {
+    max-width: 650px;
+}
+
+.thesisHeader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-top: 32px;
+}
